@@ -94,18 +94,20 @@
 
 
 
-  <meta name="description" content="这里都是空的，什么都没有">
+  <meta name="description" content="这里记录了搭建这个博客的步骤，详见全文…">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建该博客的笔记">
+<meta property="og:title" content="搭建一个这样的博客的笔记">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/搭建该博客的笔记/index.html">
 <meta property="og:site_name" content="阿隆">
-<meta property="og:description" content="这里都是空的，什么都没有">
+<meta property="og:description" content="这里记录了搭建这个博客的步骤，详见全文…">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T06:30:48.964Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/21/搭建该博客的笔记/hello_world.jpg">
+<meta property="og:updated_time" content="2019-03-22T15:48:20.899Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建该博客的笔记">
-<meta name="twitter:description" content="这里都是空的，什么都没有">
+<meta name="twitter:title" content="搭建一个这样的博客的笔记">
+<meta name="twitter:description" content="这里记录了搭建这个博客的步骤，详见全文…">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/21/搭建该博客的笔记/hello_world.jpg">
 
 
 
@@ -122,7 +124,7 @@
   };
 </script>
 
-  <title>搭建该博客的笔记 | 阿隆</title>
+  <title>搭建一个这样的博客的笔记 | 阿隆</title>
   
 
 
@@ -187,7 +189,7 @@
     </div>
     
       
-        <p class="site-subtitle">好好学习 踏实工作</p>
+        <p class="site-subtitle">好好学习 好好生活</p>
       
     
     
@@ -346,7 +348,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="along">
-      <meta itemprop="description" content="记录一些技术学习笔记或者日记之类的东西">
+      <meta itemprop="description" content="随便记录点东西反正也没人看">
       <meta itemprop="image" content="/images/header.jpg">
     </span>
 
@@ -359,7 +361,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">搭建该博客的笔记
+          <h1 class="post-title" itemprop="name headline">搭建一个这样的博客的笔记
 
               
             
@@ -385,12 +387,24 @@
                 
               
 
-              <time title="创建时间：2019-03-21 14:15:39 / 修改时间：14:30:48" itemprop="dateCreated datePublished" datetime="2019-03-21T14:15:39+08:00">2019-03-21</time>
+              <time title="创建时间：2019-03-21 14:15:39" itemprop="dateCreated datePublished" datetime="2019-03-21T14:15:39+08:00">2019-03-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-22 23:48:20" itemprop="dateModified" datetime="2019-03-22T23:48:20+08:00">2019-03-22</time>
               
             
           </span>
@@ -442,7 +456,74 @@
       
 
       
-        <p>这里都是空的，什么都没有</p>
+        <p>这里记录了搭建这个博客的步骤，详见全文…<br><a id="more"></a></p>
+<h2 id="1-建立一个hexo网站"><a href="#1-建立一个hexo网站" class="headerlink" title="1.建立一个hexo网站"></a>1.建立一个hexo网站</h2><h3 id="1-1环境准备"><a href="#1-1环境准备" class="headerlink" title="1.1环境准备"></a>1.1环境准备</h3><p>开发环境:Git+node+vscode的前端开发环境(请自行百度)</p>
+<h3 id="1-2项目创建"><a href="#1-2项目创建" class="headerlink" title="1.2项目创建"></a>1.2项目创建</h3><ul>
+<li><p>打开cmd，执行 sudo npm install hexo-cli -g 命令，全局安装Hexo</p>
+</li>
+<li><p>安装完后，执行 hexo -v 命令，验证是否安装完成</p>
+</li>
+<li><p>在合适的文件夹，执行 hexo init projectname，初始化一个hexo项目</p>
+</li>
+<li><p>进入文件夹，执行 cd projectname</p>
+</li>
+<li><p>执行 npm install</p>
+</li>
+</ul>
+<p>至此已经成功创建了一个hexo项目</p>
+<h3 id="1-3项目基本操作"><a href="#1-3项目基本操作" class="headerlink" title="1.3项目基本操作"></a>1.3项目基本操作</h3><p>通过vscode打开你的hexo项目</p>
+<ul>
+<li><p>新建一篇文章</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"搭建该博客的笔记"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成静态页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开链接可以看到如下页面</p>
+</li>
+</ul>
+<img src="/2019/03/21/搭建该博客的笔记/hello_world.jpg">
+<h3 id="1-4项目配置设置主题"><a href="#1-4项目配置设置主题" class="headerlink" title="1.4项目配置设置主题"></a>1.4项目配置设置主题</h3><ul>
+<li><p>在实际操作之前，建议去看它半个小时<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a></p>
+</li>
+<li><p>然后你需要配置一些个性化的config</p>
+</li>
+<li><p>最后给你的博客选个主题并进行配置，这里我用的是next</p>
+</li>
+</ul>
+<h2 id="2-部署到GitHub-Pages"><a href="#2-部署到GitHub-Pages" class="headerlink" title="2.部署到GitHub Pages"></a>2.部署到GitHub Pages</h2><p>太长不想详细写了，直接写关键节点</p>
+<ul>
+<li><p>新建一个Github账号</p>
+</li>
+<li><p>新建一个仓库，作为博客命名有要求：yourusername.github.io，同时需要public才能作为博客</p>
+</li>
+<li><p>在setting里面开启GitHub Pages</p>
+</li>
+<li><p>在config文件配置deploy配置项</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:woshialong/woshialong.github.io.git</span><br><span class="line">  <span class="comment"># 在github对应项目中复制，选择shh和http都行</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行部署</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这时候你就可以通过 yourusername.github.io 打开了</p>
+</li>
+</ul>
+<h2 id="3-完善域名和SSL证书"><a href="#3-完善域名和SSL证书" class="headerlink" title="3.完善域名和SSL证书"></a>3.完善域名和SSL证书</h2><ul>
+<li><p>在各大云服务平台选个域名买一下，要审核通过</p>
+</li>
+<li><p>配置域名解析对应到 yourusername.github.io</p>
+</li>
+<li><p>仓库setting里面配置Custom domain</p>
+</li>
+<li><p>在各大云服务平台搞个免费的SSL证书，对应到你的域名上，也要审核通过</p>
+</li>
+<li><p>仓库setting里面配置Enforce HTTPS </p>
+</li>
+</ul>
+<p>至此你就可以打开 <a href="https://ezrealong.cn" target="_blank" rel="noopener">ezrealong.cn</a> 访问博客了</p>
 
       
     </div>
@@ -531,15 +612,24 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/header.jpg" alt="along">
             
               <p class="site-author-name" itemprop="name">along</p>
-              <p class="site-description motion-element" itemprop="description">记录一些技术学习笔记或者日记之类的东西</p>
+              <p class="site-description motion-element" itemprop="description">随便记录点东西反正也没人看</p>
           </div>
 
           
@@ -632,6 +722,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-建立一个hexo网站"><span class="nav-number">1.</span> <span class="nav-text">1.建立一个hexo网站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1环境准备"><span class="nav-number">1.1.</span> <span class="nav-text">1.1环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2项目创建"><span class="nav-number">1.2.</span> <span class="nav-text">1.2项目创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3项目基本操作"><span class="nav-number">1.3.</span> <span class="nav-text">1.3项目基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4项目配置设置主题"><span class="nav-number">1.4.</span> <span class="nav-text">1.4项目配置设置主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-部署到GitHub-Pages"><span class="nav-number">2.</span> <span class="nav-text">2.部署到GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-完善域名和SSL证书"><span class="nav-number">3.</span> <span class="nav-text">3.完善域名和SSL证书</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

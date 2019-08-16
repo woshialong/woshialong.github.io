@@ -102,13 +102,14 @@
 <meta property="og:site_name" content="阿隆">
 <meta property="og:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu2.png">
-<meta property="og:updated_time" content="2019-08-16T07:29:30.101Z">
+<meta property="og:updated_time" content="2019-08-16T10:05:09.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="告警平台需求设计">
 <meta name="twitter:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
 
 
 
@@ -388,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2019-08-16 11:58:36 / 修改时间：15:29:30" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
+              <time title="创建时间：2019-08-16 11:58:36 / 修改时间：18:05:09" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
             
 
             
@@ -545,8 +546,9 @@
 </tbody>
 </table>
 <h2 id="2-统一告警平台交互"><a href="#2-统一告警平台交互" class="headerlink" title="2.统一告警平台交互"></a>2.统一告警平台交互</h2><p>前期计划直接延用目前运维平台已有的前端页面模板，已经满足目前的业务需求，如果后续使用的好，考虑将前端分离出来，再进行优化展示。受限于页面模板，先做成两个页面：告警导航页，和告警详情页。后续可以整合到一个页面</p>
-<h3 id="2-1告警导航页"><a href="#2-1告警导航页" class="headerlink" title="2.1告警导航页"></a>2.1告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
-<h3 id="2-2告警详情页"><a href="#2-2告警详情页" class="headerlink" title="2.2告警详情页"></a>2.2告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
+<h3 id="2-1整体流程图"><a href="#2-1整体流程图" class="headerlink" title="2.1整体流程图"></a>2.1整体流程图</h3><img src="/2019/08/16/告警平台需求设计/liuchengtu.png">
+<h3 id="2-2告警导航页"><a href="#2-2告警导航页" class="headerlink" title="2.2告警导航页"></a>2.2告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
+<h3 id="2-3告警详情页"><a href="#2-3告警详情页" class="headerlink" title="2.3告警详情页"></a>2.3告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
 <h2 id="3-技术选型思路"><a href="#3-技术选型思路" class="headerlink" title="3.技术选型思路"></a>3.技术选型思路</h2><p>要做的东西可以分为两步，一个是统一接口收集告警，一个是平台展示编辑数据。统一接口延用公司已有的钉钉通知的springboot项目，在基础上新增一个接口。展示数据做在运维平台上（python的django工程）。数据打算共用数据库。以后会分离出来独立出接口出页面，抽离出来做一个开源项目，做一个通用的工具。</p>
 
       
@@ -769,7 +771,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1告警导航页"><span class="nav-number">2.1.</span> <span class="nav-text">2.1告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警详情页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1整体流程图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1整体流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警导航页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3告警详情页"><span class="nav-number">2.3.</span> <span class="nav-text">2.3告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
             
 
           </div>

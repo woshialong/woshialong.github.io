@@ -94,29 +94,33 @@
 
 
 
-  <meta name="description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="keywords" content="需求设计,监控告警">
+  <meta name="description" content="去年公司引入了httprunner作为接口自动化的框架，并在此基础上进行了二次开发。主要是适应公司接口特性；调整UI和交互的适用性。当时因为想修复几个问题，自学了python，大概上午看语法，下午看框架，然后就直接开始撸代码实践了。所以想分享一下当时的学习历程，供大家参考">
+<meta name="keywords" content="httprunner框架,python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="告警平台需求设计">
-<meta property="og:url" content="http://yoursite.com/2019/08/16/告警平台需求设计/index.html">
+<meta property="og:title" content="通过httprunner框架的python学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/index.html">
 <meta property="og:site_name" content="阿隆">
-<meta property="og:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
+<meta property="og:description" content="去年公司引入了httprunner作为接口自动化的框架，并在此基础上进行了二次开发。主要是适应公司接口特性；调整UI和交互的适用性。当时因为想修复几个问题，自学了python，大概上午看语法，下午看框架，然后就直接开始撸代码实践了。所以想分享一下当时的学习历程，供大家参考">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu2.png">
-<meta property="og:updated_time" content="2019-08-16T10:05:09.608Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/python_basic.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/django.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/function.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/import.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/mongo.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/script.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/lianlu.jpg">
+<meta property="og:updated_time" content="2019-09-17T10:00:59.035Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="告警平台需求设计">
-<meta name="twitter:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
+<meta name="twitter:title" content="通过httprunner框架的python学习笔记">
+<meta name="twitter:description" content="去年公司引入了httprunner作为接口自动化的框架，并在此基础上进行了二次开发。主要是适应公司接口特性；调整UI和交互的适用性。当时因为想修复几个问题，自学了python，大概上午看语法，下午看框架，然后就直接开始撸代码实践了。所以想分享一下当时的学习历程，供大家参考">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/python_basic.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/">
 
 
 
@@ -126,7 +130,7 @@
   };
 </script>
 
-  <title>告警平台需求设计 | 阿隆</title>
+  <title>通过httprunner框架的python学习笔记 | 阿隆</title>
   
 
 
@@ -346,7 +350,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/通过httprunner框架的python学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="along">
@@ -363,7 +367,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">告警平台需求设计
+          <h1 class="post-title" itemprop="name headline">通过httprunner框架的python学习笔记
 
               
             
@@ -389,12 +393,24 @@
                 
               
 
-              <time title="创建时间：2019-08-16 11:58:36 / 修改时间：18:05:09" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
+              <time title="创建时间：2019-09-16 17:56:37" itemprop="dateCreated datePublished" datetime="2019-09-16T17:56:37+08:00">2019-09-16</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-17 18:00:59" itemprop="dateModified" datetime="2019-09-17T18:00:59+08:00">2019-09-17</time>
               
             
           </span>
@@ -411,7 +427,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开源项目/" itemprop="url" rel="index"><span itemprop="name">开源项目</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
 
                 
                 
@@ -446,110 +462,47 @@
       
 
       
-        <p>最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：</p>
+        <p>去年公司引入了httprunner作为接口自动化的框架，并在此基础上进行了二次开发。主要是适应公司接口特性；调整UI和交互的适用性。当时因为想修复几个问题，自学了python，大概上午看语法，下午看框架，然后就直接开始撸代码实践了。所以想分享一下当时的学习历程，供大家参考<br><a id="more"></a></p>
+<h2 id="1-整理需要学习的内容"><a href="#1-整理需要学习的内容" class="headerlink" title="1.整理需要学习的内容"></a>1.整理需要学习的内容</h2><h3 id="1-1确认需要实现的需求是什么"><a href="#1-1确认需要实现的需求是什么" class="headerlink" title="1.1确认需要实现的需求是什么"></a>1.1确认需要实现的需求是什么</h3><p>首先我觉得如果单纯为了学习一门语言而学习，目的性会没有那么强，连学了做什么都不知道的话，就缺少了实用价值，不是很建议</p>
+<p>所以我们先明确学习目的，然后来反推效率会很高。</p>
+<p>比如我们这次学习python的目的是为了深入理解httprunner框架，用于解决以下几个实际问题：</p>
 <ul>
-<li>1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计</li>
-<li>2、告警来源多，各个告警源消息格式不一样，除了运维同学，其他技术同学也搞不清一共有哪些</li>
-<li>3、通知手段单一，钉钉消息一多，感知度和关注度会降低</li>
+<li>1、掌握写自定义函数的能力——需要学习基础语法</li>
+<li>2、解决无法多人并发执行脚本的问题——需要学习语法、选型一个MQ进行异步执行</li>
+<li>3、解决前端交互不友好的问题——需要学习web框架（该项目使用的是django框架），需要掌握一些前端知识</li>
 </ul>
-<p>最终和运维测试团队碰了一下思路，觉得做这么一个整合告警的平台，再推动使用落地。用于反推一些偶发告警问题，反推告警配置有效性。下面记录了详细的交互稿，接口设计和技术选型<br><a id="more"></a></p>
-<h2 id="1-统一的接收告警接口"><a href="#1-统一的接收告警接口" class="headerlink" title="1.统一的接收告警接口"></a>1.统一的接收告警接口</h2><p>提供统一的webhook接口收集告警，将告警信息统一数据格式留档，然后传入通知到哪些地方，是否记录工单（jira）</p>
-<h3 id="1-1接口地址"><a href="#1-1接口地址" class="headerlink" title="1.1接口地址"></a>1.1接口地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http请求方式：POST</span><br><span class="line">https://your.monitor.com/monitorAlert?from_paltform=aliyun</span><br></pre></td></tr></table></figure>
-<h3 id="1-2请求参数"><a href="#1-2请求参数" class="headerlink" title="1.2请求参数"></a>1.2请求参数</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数</th>
-<th style="text-align:left">是否必须</th>
-<th style="text-align:left">类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">from_paltform</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>来源平台</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">object</td>
-<td>通知到哪</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where.ding</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">list</td>
-<td>通知钉钉群数组</td>
-</tr>
-<tr>
-<td style="text-align:left">is_record_jira</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">boolean</td>
-<td>是否创建工单</td>
-</tr>
-<tr>
-<td style="text-align:left">status</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">int</td>
-<td>1、告警；2、解除告警，默认告警</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>告警信息</td>
-</tr>
-<tr>
-<td style="text-align:left">data.trigger</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警标题</td>
-</tr>
-<tr>
-<td style="text-align:left">data.user</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>责任人</td>
-</tr>
-<tr>
-<td style="text-align:left">data.busitype</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属业务</td>
-</tr>
-<tr>
-<td style="text-align:left">data.project</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属应用</td>
-</tr>
-<tr>
-<td style="text-align:left">data.message</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警描述</td>
-</tr>
-<tr>
-<td style="text-align:left">data.firetime</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>告警时间，默认填充服务器时间戳</td>
-</tr>
-<tr>
-<td style="text-align:left">data.queryurl</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>关联链接</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-统一告警平台交互"><a href="#2-统一告警平台交互" class="headerlink" title="2.统一告警平台交互"></a>2.统一告警平台交互</h2><p>前期计划直接延用目前运维平台已有的前端页面模板，已经满足目前的业务需求，如果后续使用的好，考虑将前端分离出来，再进行优化展示。受限于页面模板，先做成两个页面：告警导航页，和告警详情页。后续可以整合到一个页面</p>
-<h3 id="2-1整体流程图"><a href="#2-1整体流程图" class="headerlink" title="2.1整体流程图"></a>2.1整体流程图</h3><img src="/2019/08/16/告警平台需求设计/liuchengtu.png">
-<h3 id="2-2告警导航页"><a href="#2-2告警导航页" class="headerlink" title="2.2告警导航页"></a>2.2告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
-<h3 id="2-3告警详情页"><a href="#2-3告警详情页" class="headerlink" title="2.3告警详情页"></a>2.3告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
-<h2 id="3-技术选型思路"><a href="#3-技术选型思路" class="headerlink" title="3.技术选型思路"></a>3.技术选型思路</h2><p>要做的东西可以分为两步，一个是统一接口收集告警，一个是平台展示编辑数据。统一接口延用公司已有的钉钉通知的springboot项目，在基础上新增一个接口。展示数据做在运维平台上（python的django工程）。数据打算共用数据库。以后会分离出来独立出接口出页面，抽离出来做一个开源项目，做一个通用的工具。</p>
+<h3 id="1-2针对性的学习的知识点"><a href="#1-2针对性的学习的知识点" class="headerlink" title="1.2针对性的学习的知识点"></a>1.2针对性的学习的知识点</h3><p>根据上面的需求分析，我们发现当前我们急需掌握的python知识点包括：</p>
+<ul>
+<li>1、python基础语法</li>
+<li>2、django框架</li>
+</ul>
+<p>接下来就是发挥自己baidu自学的能力了</p>
+<h2 id="2-语法学习过程"><a href="#2-语法学习过程" class="headerlink" title="2.语法学习过程"></a>2.语法学习过程</h2><p><a href="https://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="noopener">python语法教程</a></p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/python_basic.jpg">
+<h2 id="3-django框架了解"><a href="#3-django框架了解" class="headerlink" title="3.django框架了解"></a>3.django框架了解</h2><p><a href="https://www.cnblogs.com/ailiailan/p/8480391.html" target="_blank" rel="noopener">django框架教程</a></p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/django.png">
+<h2 id="4-httprunner修改实践"><a href="#4-httprunner修改实践" class="headerlink" title="4.httprunner修改实践"></a>4.httprunner修改实践</h2><h3 id="4-1自定义函数实现"><a href="#4-1自定义函数实现" class="headerlink" title="4.1自定义函数实现"></a>4.1自定义函数实现</h3><ul>
+<li><p>首先我们的自定义函数要写在debugtalk里面，这是框架决定的，这里我们在debugtalk.py文件定义一个delete_gift_activity_data_for_free函数（免费礼包数据清理）</p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/function.jpg">
+</li>
+<li><p>因为这个数据操作比较复杂，具体实现不建议写在debugtalk，所以我们实现在了mongodb_connect里，并在debugtalk里引入</p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/import.jpg">
+</li>
+<li><p>下面是数据操作的实现函数，我们引用了第三方库pymongo的方法</p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/mongo.jpg">
+</li>
+<li><p>最后是脚本，我们在teardown_hooks时，引用了函数</p>
+<img src="/2019/09/16/通过httprunner框架的python学习笔记/script.jpg">
+</li>
+</ul>
+<h3 id="4-2整体链路解析"><a href="#4-2整体链路解析" class="headerlink" title="4.2整体链路解析"></a>4.2整体链路解析</h3><p>通过了上面的学习之后，建议大家有时间可以阅读一下整体链路的源码，首先入口函数在django框架的views.py里找，下面是链路图：<br><img src="/2019/09/16/通过httprunner框架的python学习笔记/lianlu.jpg"></p>
+<h3 id="4-3前端交互和MQ异步化简单谈一下"><a href="#4-3前端交互和MQ异步化简单谈一下" class="headerlink" title="4.3前端交互和MQ异步化简单谈一下"></a>4.3前端交互和MQ异步化简单谈一下</h3><p>先不谈了</p>
+<h3 id="4-4其他可以扩展的思路"><a href="#4-4其他可以扩展的思路" class="headerlink" title="4.4其他可以扩展的思路"></a>4.4其他可以扩展的思路</h3><ul>
+<li>界面交互的优化</li>
+<li>告警通知的优化</li>
+<li>还比如做的返回体的json结构校验</li>
+<li>大家还有什么想到的</li>
+</ul>
 
       
     </div>
@@ -573,9 +526,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/需求设计/" rel="tag"># 需求设计</a>
+            <a href="/tags/httprunner框架/" rel="tag"># httprunner框架</a>
           
-            <a href="/tags/监控告警/" rel="tag"># 监控告警</a>
+            <a href="/tags/python/" rel="tag"># python</a>
           
         </div>
       
@@ -588,8 +541,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/09/阿猫阿狗谈架构/" rel="next" title="阿猫阿狗谈架构">
-                <i class="fa fa-chevron-left"></i> 阿猫阿狗谈架构
+              <a href="/2019/08/16/告警平台需求设计/" rel="next" title="告警平台需求设计">
+                <i class="fa fa-chevron-left"></i> 告警平台需求设计
               </a>
             
           </div>
@@ -597,10 +550,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/16/通过httprunner框架的python学习笔记/" rel="prev" title="通过httprunner框架的python学习笔记">
-                通过httprunner框架的python学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -781,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1整体流程图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1整体流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警导航页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3告警详情页"><span class="nav-number">2.3.</span> <span class="nav-text">2.3告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-整理需要学习的内容"><span class="nav-number">1.</span> <span class="nav-text">1.整理需要学习的内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1确认需要实现的需求是什么"><span class="nav-number">1.1.</span> <span class="nav-text">1.1确认需要实现的需求是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2针对性的学习的知识点"><span class="nav-number">1.2.</span> <span class="nav-text">1.2针对性的学习的知识点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-语法学习过程"><span class="nav-number">2.</span> <span class="nav-text">2.语法学习过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-django框架了解"><span class="nav-number">3.</span> <span class="nav-text">3.django框架了解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-httprunner修改实践"><span class="nav-number">4.</span> <span class="nav-text">4.httprunner修改实践</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1自定义函数实现"><span class="nav-number">4.1.</span> <span class="nav-text">4.1自定义函数实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2整体链路解析"><span class="nav-number">4.2.</span> <span class="nav-text">4.2整体链路解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3前端交互和MQ异步化简单谈一下"><span class="nav-number">4.3.</span> <span class="nav-text">4.3前端交互和MQ异步化简单谈一下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4其他可以扩展的思路"><span class="nav-number">4.4.</span> <span class="nav-text">4.4其他可以扩展的思路</span></a></li></ol></li></ol></div>
             
 
           </div>

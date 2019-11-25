@@ -94,29 +94,31 @@
 
 
 
-  <meta name="description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="keywords" content="需求设计,监控告警">
+  <meta name="description" content="最近公司的一位运维同事离职了，恰逢最近正在推需求和BUG的流程，做了一些jira通知的二次开发和调整了一些项目配置。下面通过4个方面来介绍一下jira的相关知识。。。">
+<meta name="keywords" content="jira,流程管理">
 <meta property="og:type" content="article">
-<meta property="og:title" content="告警平台需求设计">
-<meta property="og:url" content="http://yoursite.com/2019/08/16/告警平台需求设计/index.html">
+<meta property="og:title" content="深度了解jira的使用">
+<meta property="og:url" content="http://yoursite.com/2019/11/25/深度了解jira的使用/index.html">
 <meta property="og:site_name" content="阿隆">
-<meta property="og:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
+<meta property="og:description" content="最近公司的一位运维同事离职了，恰逢最近正在推需求和BUG的流程，做了一些jira通知的二次开发和调整了一些项目配置。下面通过4个方面来介绍一下jira的相关知识。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu2.png">
-<meta property="og:updated_time" content="2019-08-16T10:05:09.608Z">
+<meta property="og:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/jqlfilter.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/rapidView.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/dashboard.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/gongdan.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/webhook.jpg">
+<meta property="og:updated_time" content="2019-11-25T11:01:33.011Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="告警平台需求设计">
-<meta name="twitter:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
+<meta name="twitter:title" content="深度了解jira的使用">
+<meta name="twitter:description" content="最近公司的一位运维同事离职了，恰逢最近正在推需求和BUG的流程，做了一些jira通知的二次开发和调整了一些项目配置。下面通过4个方面来介绍一下jira的相关知识。。。">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/25/深度了解jira的使用/jqlfilter.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/25/深度了解jira的使用/">
 
 
 
@@ -126,7 +128,7 @@
   };
 </script>
 
-  <title>告警平台需求设计 | 阿隆</title>
+  <title>深度了解jira的使用 | 阿隆</title>
   
 
 
@@ -346,7 +348,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/25/深度了解jira的使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="along">
@@ -363,7 +365,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">告警平台需求设计
+          <h1 class="post-title" itemprop="name headline">深度了解jira的使用
 
               
             
@@ -389,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2019-08-16 11:58:36 / 修改时间：18:05:09" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
+              <time title="创建时间：2019-11-25 17:05:11 / 修改时间：19:01:33" itemprop="dateCreated datePublished" datetime="2019-11-25T17:05:11+08:00">2019-11-25</time>
             
 
             
@@ -411,7 +413,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开源项目/" itemprop="url" rel="index"><span itemprop="name">开源项目</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
 
                 
                 
@@ -446,110 +448,29 @@
       
 
       
-        <p>最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：</p>
+        <p>最近公司的一位运维同事离职了，恰逢最近正在推需求和BUG的流程，做了一些jira通知的二次开发和调整了一些项目配置。下面通过4个方面来介绍一下jira的相关知识。。。<br><a id="more"></a></p>
+<h2 id="1-jira安装部署"><a href="#1-jira安装部署" class="headerlink" title="1.jira安装部署"></a>1.jira安装部署</h2><p><a href="https://blog.csdn.net/lelemom/article/details/86708401" target="_blank" rel="noopener">jira安装教程</a><br>安装部署稍微简单的讲一下，基本上照着网上一些教程，装一下就可以了。可以简单拆分成3步：</p>
 <ul>
-<li>1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计</li>
-<li>2、告警来源多，各个告警源消息格式不一样，除了运维同学，其他技术同学也搞不清一共有哪些</li>
-<li>3、通知手段单一，钉钉消息一多，感知度和关注度会降低</li>
+<li>根据自身服务器找个安装包装一下，装完了发现实际就是一个tomcat容器里面放的一个web应用</li>
+<li>启动之后，打开index做一些基础配置，其中需要连接一个数据库，事先准备好一个空的数据库就可以了</li>
+<li>其他配置基本上包括：初始化管理员、项目等</li>
+<li>一般还有个需要接入LDAP，用于人员管理，这里我没有接过，知道一下，以后用到再查资料就好了</li>
 </ul>
-<p>最终和运维测试团队碰了一下思路，觉得做这么一个整合告警的平台，再推动使用落地。用于反推一些偶发告警问题，反推告警配置有效性。下面记录了详细的交互稿，接口设计和技术选型<br><a id="more"></a></p>
-<h2 id="1-统一的接收告警接口"><a href="#1-统一的接收告警接口" class="headerlink" title="1.统一的接收告警接口"></a>1.统一的接收告警接口</h2><p>提供统一的webhook接口收集告警，将告警信息统一数据格式留档，然后传入通知到哪些地方，是否记录工单（jira）</p>
-<h3 id="1-1接口地址"><a href="#1-1接口地址" class="headerlink" title="1.1接口地址"></a>1.1接口地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http请求方式：POST</span><br><span class="line">https://your.monitor.com/monitorAlert?from_paltform=aliyun</span><br></pre></td></tr></table></figure>
-<h3 id="1-2请求参数"><a href="#1-2请求参数" class="headerlink" title="1.2请求参数"></a>1.2请求参数</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数</th>
-<th style="text-align:left">是否必须</th>
-<th style="text-align:left">类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">from_paltform</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>来源平台</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">object</td>
-<td>通知到哪</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where.ding</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">list</td>
-<td>通知钉钉群数组</td>
-</tr>
-<tr>
-<td style="text-align:left">is_record_jira</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">boolean</td>
-<td>是否创建工单</td>
-</tr>
-<tr>
-<td style="text-align:left">status</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">int</td>
-<td>1、告警；2、解除告警，默认告警</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>告警信息</td>
-</tr>
-<tr>
-<td style="text-align:left">data.trigger</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警标题</td>
-</tr>
-<tr>
-<td style="text-align:left">data.user</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>责任人</td>
-</tr>
-<tr>
-<td style="text-align:left">data.busitype</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属业务</td>
-</tr>
-<tr>
-<td style="text-align:left">data.project</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属应用</td>
-</tr>
-<tr>
-<td style="text-align:left">data.message</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警描述</td>
-</tr>
-<tr>
-<td style="text-align:left">data.firetime</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>告警时间，默认填充服务器时间戳</td>
-</tr>
-<tr>
-<td style="text-align:left">data.queryurl</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>关联链接</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-统一告警平台交互"><a href="#2-统一告警平台交互" class="headerlink" title="2.统一告警平台交互"></a>2.统一告警平台交互</h2><p>前期计划直接延用目前运维平台已有的前端页面模板，已经满足目前的业务需求，如果后续使用的好，考虑将前端分离出来，再进行优化展示。受限于页面模板，先做成两个页面：告警导航页，和告警详情页。后续可以整合到一个页面</p>
-<h3 id="2-1整体流程图"><a href="#2-1整体流程图" class="headerlink" title="2.1整体流程图"></a>2.1整体流程图</h3><img src="/2019/08/16/告警平台需求设计/liuchengtu.png">
-<h3 id="2-2告警导航页"><a href="#2-2告警导航页" class="headerlink" title="2.2告警导航页"></a>2.2告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
-<h3 id="2-3告警详情页"><a href="#2-3告警详情页" class="headerlink" title="2.3告警详情页"></a>2.3告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
-<h2 id="3-技术选型思路"><a href="#3-技术选型思路" class="headerlink" title="3.技术选型思路"></a>3.技术选型思路</h2><p>要做的东西可以分为两步，一个是统一接口收集告警，一个是平台展示编辑数据。统一接口延用公司已有的钉钉通知的springboot项目，在基础上新增一个接口。展示数据做在运维平台上（python的django工程）。数据打算共用数据库。以后会分离出来独立出接口出页面，抽离出来做一个开源项目，做一个通用的工具。</p>
+<h2 id="2-jira用户侧功能使用"><a href="#2-jira用户侧功能使用" class="headerlink" title="2.jira用户侧功能使用"></a>2.jira用户侧功能使用</h2><h3 id="2-1jql语法和筛选器"><a href="#2-1jql语法和筛选器" class="headerlink" title="2.1jql语法和筛选器"></a>2.1jql语法和筛选器</h3><p>通过jql搜索和保存收藏的筛选器快速的查询到想要看到的工单<br><img src="/2019/11/25/深度了解jira的使用/jqlfilter.jpg"></p>
+<h3 id="2-2看板配置"><a href="#2-2看板配置" class="headerlink" title="2.2看板配置"></a>2.2看板配置</h3><p>介绍一下通用配置、列、快速搜索、卡颜色、详情视图<br><img src="/2019/11/25/深度了解jira的使用/rapidView.jpg"></p>
+<h3 id="2-3仪表盘配置"><a href="#2-3仪表盘配置" class="headerlink" title="2.3仪表盘配置"></a>2.3仪表盘配置</h3><p>简单的图表统计，可以用于周报或者KPI参考<br><img src="/2019/11/25/深度了解jira的使用/dashboard.jpg"></p>
+<h2 id="3-jira管理员侧功能介绍"><a href="#3-jira管理员侧功能介绍" class="headerlink" title="3.jira管理员侧功能介绍"></a>3.jira管理员侧功能介绍</h2><h3 id="3-1-项目类型Software和Service-Desk的区别和使用场景"><a href="#3-1-项目类型Software和Service-Desk的区别和使用场景" class="headerlink" title="3.1 项目类型Software和Service Desk的区别和使用场景"></a>3.1 项目类型Software和Service Desk的区别和使用场景</h3><ul>
+<li>项目作为一个维度划分不用部门或者角色</li>
+<li>Software类型主要用于研发团队敏捷开发流程管理中，特点是敏捷开发流程看板</li>
+<li>Service Desk类型主要用于管理客户请求工单，特点是客户侧使用简单，问题解决者工单展示清晰</li>
+</ul>
+<h3 id="3-2-问题类型、工作流、页面、域的理解和关系"><a href="#3-2-问题类型、工作流、页面、域的理解和关系" class="headerlink" title="3.2 问题类型、工作流、页面、域的理解和关系"></a>3.2 问题类型、工作流、页面、域的理解和关系</h3><p>当把工单这4个属性理解后，我们就可以根据自身团队的特点配置适合自己的流程管理<br><img src="/2019/11/25/深度了解jira的使用/gongdan.jpg"></p>
+<h3 id="3-3-WebHook通知方案"><a href="#3-3-WebHook通知方案" class="headerlink" title="3.3 WebHook通知方案"></a>3.3 WebHook通知方案</h3><p>当工单创建或者变更时触发，将问题详情信息作为json请求体发送到指定url，可以是钉钉机器人或者自定义url<br><img src="/2019/11/25/深度了解jira的使用/webhook.jpg"></p>
+<h2 id="4-jira开放接口文档介绍"><a href="#4-jira开放接口文档介绍" class="headerlink" title="4.jira开放接口文档介绍"></a>4.jira开放接口文档介绍</h2><p><a href="https://developer.atlassian.com/cloud/jira/platform/rest/v2/" target="_blank" rel="noopener">jira接口文档</a><br>目前使用到的场景有两个：</p>
+<ul>
+<li>告警平台创建jira工单create接口</li>
+<li>需求延期通知用到了通过jql查询问题清单的query接口</li>
+</ul>
 
       
     </div>
@@ -573,9 +494,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/需求设计/" rel="tag"># 需求设计</a>
+            <a href="/tags/jira/" rel="tag"># jira</a>
           
-            <a href="/tags/监控告警/" rel="tag"># 监控告警</a>
+            <a href="/tags/流程管理/" rel="tag"># 流程管理</a>
           
         </div>
       
@@ -588,8 +509,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/09/阿猫阿狗谈架构/" rel="next" title="阿猫阿狗谈架构">
-                <i class="fa fa-chevron-left"></i> 阿猫阿狗谈架构
+              <a href="/2019/09/16/通过httprunner框架的python学习笔记/" rel="next" title="通过httprunner框架的python学习笔记">
+                <i class="fa fa-chevron-left"></i> 通过httprunner框架的python学习笔记
               </a>
             
           </div>
@@ -597,10 +518,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/16/通过httprunner框架的python学习笔记/" rel="prev" title="通过httprunner框架的python学习笔记">
-                通过httprunner框架的python学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -785,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1整体流程图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1整体流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警导航页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3告警详情页"><span class="nav-number">2.3.</span> <span class="nav-text">2.3告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-jira安装部署"><span class="nav-number">1.</span> <span class="nav-text">1.jira安装部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-jira用户侧功能使用"><span class="nav-number">2.</span> <span class="nav-text">2.jira用户侧功能使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1jql语法和筛选器"><span class="nav-number">2.1.</span> <span class="nav-text">2.1jql语法和筛选器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2看板配置"><span class="nav-number">2.2.</span> <span class="nav-text">2.2看板配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3仪表盘配置"><span class="nav-number">2.3.</span> <span class="nav-text">2.3仪表盘配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-jira管理员侧功能介绍"><span class="nav-number">3.</span> <span class="nav-text">3.jira管理员侧功能介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-项目类型Software和Service-Desk的区别和使用场景"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 项目类型Software和Service Desk的区别和使用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-问题类型、工作流、页面、域的理解和关系"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 问题类型、工作流、页面、域的理解和关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-WebHook通知方案"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 WebHook通知方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-jira开放接口文档介绍"><span class="nav-number">4.</span> <span class="nav-text">4.jira开放接口文档介绍</span></a></li></ol></div>
             
 
           </div>

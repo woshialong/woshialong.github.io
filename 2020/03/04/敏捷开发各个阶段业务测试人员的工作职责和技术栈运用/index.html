@@ -94,29 +94,27 @@
 
 
 
-  <meta name="description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="keywords" content="需求设计,监控告警">
+  <meta name="description" content="最近在协助一些同学制定一些个人成长计划，感觉测试人员综合能力涉及的知识点很多，于是想整理一份相关文档，提供自己和他人规划学习方向。我打算以需求生命周期作为维度，从需求阶段、开发阶段、测试阶段和发布上线四个阶段来梳理测试人员工作职责和一些技术栈的运用，当然肯定也会有些不全面，后续有机会定期再做增补。。。">
+<meta name="keywords" content="测试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="告警平台需求设计">
-<meta property="og:url" content="http://yoursite.com/2019/08/16/告警平台需求设计/index.html">
+<meta property="og:title" content="敏捷开发各个阶段业务测试人员的工作职责和技术栈运用">
+<meta property="og:url" content="http://yoursite.com/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/index.html">
 <meta property="og:site_name" content="阿隆">
-<meta property="og:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
+<meta property="og:description" content="最近在协助一些同学制定一些个人成长计划，感觉测试人员综合能力涉及的知识点很多，于是想整理一份相关文档，提供自己和他人规划学习方向。我打算以需求生命周期作为维度，从需求阶段、开发阶段、测试阶段和发布上线四个阶段来梳理测试人员工作职责和一些技术栈的运用，当然肯定也会有些不全面，后续有机会定期再做增补。。。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu2.png">
-<meta property="og:updated_time" content="2019-08-16T10:05:09.608Z">
+<meta property="og:image" content="http://yoursite.com/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/xmind.jpg">
+<meta property="og:updated_time" content="2020-03-04T09:22:20.572Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="告警平台需求设计">
-<meta name="twitter:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
+<meta name="twitter:title" content="敏捷开发各个阶段业务测试人员的工作职责和技术栈运用">
+<meta name="twitter:description" content="最近在协助一些同学制定一些个人成长计划，感觉测试人员综合能力涉及的知识点很多，于是想整理一份相关文档，提供自己和他人规划学习方向。我打算以需求生命周期作为维度，从需求阶段、开发阶段、测试阶段和发布上线四个阶段来梳理测试人员工作职责和一些技术栈的运用，当然肯定也会有些不全面，后续有机会定期再做增补。。。">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/xmind.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/">
 
 
 
@@ -126,7 +124,7 @@
   };
 </script>
 
-  <title>告警平台需求设计 | 阿隆</title>
+  <title>敏捷开发各个阶段业务测试人员的工作职责和技术栈运用 | 阿隆</title>
   
 
 
@@ -346,7 +344,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="along">
@@ -363,7 +361,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">告警平台需求设计
+          <h1 class="post-title" itemprop="name headline">敏捷开发各个阶段业务测试人员的工作职责和技术栈运用
 
               
             
@@ -389,7 +387,7 @@
                 
               
 
-              <time title="创建时间：2019-08-16 11:58:36 / 修改时间：18:05:09" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
+              <time title="创建时间：2020-03-04 16:01:07 / 修改时间：17:22:20" itemprop="dateCreated datePublished" datetime="2020-03-04T16:01:07+08:00">2020-03-04</time>
             
 
             
@@ -411,7 +409,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/开源项目/" itemprop="url" rel="index"><span itemprop="name">开源项目</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
 
                 
                 
@@ -446,110 +444,64 @@
       
 
       
-        <p>最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：</p>
+        <p>最近在协助一些同学制定一些个人成长计划，感觉测试人员综合能力涉及的知识点很多，于是想整理一份相关文档，提供自己和他人规划学习方向。我打算以需求生命周期作为维度，从需求阶段、开发阶段、测试阶段和发布上线四个阶段来梳理测试人员工作职责和一些技术栈的运用，当然肯定也会有些不全面，后续有机会定期再做增补。。。<br><a id="more"></a></p>
+<h2 id="1-先放一个脑图"><a href="#1-先放一个脑图" class="headerlink" title="1.先放一个脑图"></a>1.先放一个脑图</h2><img src="/2020/03/04/敏捷开发各个阶段业务测试人员的工作职责和技术栈运用/xmind.jpg">
+<h2 id="2-需求阶段"><a href="#2-需求阶段" class="headerlink" title="2.需求阶段"></a>2.需求阶段</h2><p>测试左移，测试人员要有对产品需求和技术设计有分析和提出观点的能力和意识</p>
+<h3 id="2-1-需求评审"><a href="#2-1-需求评审" class="headerlink" title="2.1 需求评审"></a>2.1 需求评审</h3><p>对自身业务线产品有清晰的认识，了解且有竞品分析意识，基础需求交互设计的能力，需求评审时我们通常对需求提出意见会考虑一下三个维度：</p>
 <ul>
-<li>1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计</li>
-<li>2、告警来源多，各个告警源消息格式不一样，除了运维同学，其他技术同学也搞不清一共有哪些</li>
-<li>3、通知手段单一，钉钉消息一多，感知度和关注度会降低</li>
+<li>对核心业务KPI的作用（产品价值）</li>
+<li>用户体验（用户角度）</li>
+<li>技术可行性（结合前后端技术实现）</li>
 </ul>
-<p>最终和运维测试团队碰了一下思路，觉得做这么一个整合告警的平台，再推动使用落地。用于反推一些偶发告警问题，反推告警配置有效性。下面记录了详细的交互稿，接口设计和技术选型<br><a id="more"></a></p>
-<h2 id="1-统一的接收告警接口"><a href="#1-统一的接收告警接口" class="headerlink" title="1.统一的接收告警接口"></a>1.统一的接收告警接口</h2><p>提供统一的webhook接口收集告警，将告警信息统一数据格式留档，然后传入通知到哪些地方，是否记录工单（jira）</p>
-<h3 id="1-1接口地址"><a href="#1-1接口地址" class="headerlink" title="1.1接口地址"></a>1.1接口地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http请求方式：POST</span><br><span class="line">https://your.monitor.com/monitorAlert?from_paltform=aliyun</span><br></pre></td></tr></table></figure>
-<h3 id="1-2请求参数"><a href="#1-2请求参数" class="headerlink" title="1.2请求参数"></a>1.2请求参数</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数</th>
-<th style="text-align:left">是否必须</th>
-<th style="text-align:left">类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">from_paltform</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>来源平台</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">object</td>
-<td>通知到哪</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where.ding</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">list</td>
-<td>通知钉钉群数组</td>
-</tr>
-<tr>
-<td style="text-align:left">is_record_jira</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">boolean</td>
-<td>是否创建工单</td>
-</tr>
-<tr>
-<td style="text-align:left">status</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">int</td>
-<td>1、告警；2、解除告警，默认告警</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>告警信息</td>
-</tr>
-<tr>
-<td style="text-align:left">data.trigger</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警标题</td>
-</tr>
-<tr>
-<td style="text-align:left">data.user</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>责任人</td>
-</tr>
-<tr>
-<td style="text-align:left">data.busitype</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属业务</td>
-</tr>
-<tr>
-<td style="text-align:left">data.project</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属应用</td>
-</tr>
-<tr>
-<td style="text-align:left">data.message</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警描述</td>
-</tr>
-<tr>
-<td style="text-align:left">data.firetime</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>告警时间，默认填充服务器时间戳</td>
-</tr>
-<tr>
-<td style="text-align:left">data.queryurl</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>关联链接</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-统一告警平台交互"><a href="#2-统一告警平台交互" class="headerlink" title="2.统一告警平台交互"></a>2.统一告警平台交互</h2><p>前期计划直接延用目前运维平台已有的前端页面模板，已经满足目前的业务需求，如果后续使用的好，考虑将前端分离出来，再进行优化展示。受限于页面模板，先做成两个页面：告警导航页，和告警详情页。后续可以整合到一个页面</p>
-<h3 id="2-1整体流程图"><a href="#2-1整体流程图" class="headerlink" title="2.1整体流程图"></a>2.1整体流程图</h3><img src="/2019/08/16/告警平台需求设计/liuchengtu.png">
-<h3 id="2-2告警导航页"><a href="#2-2告警导航页" class="headerlink" title="2.2告警导航页"></a>2.2告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
-<h3 id="2-3告警详情页"><a href="#2-3告警详情页" class="headerlink" title="2.3告警详情页"></a>2.3告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
-<h2 id="3-技术选型思路"><a href="#3-技术选型思路" class="headerlink" title="3.技术选型思路"></a>3.技术选型思路</h2><p>要做的东西可以分为两步，一个是统一接口收集告警，一个是平台展示编辑数据。统一接口延用公司已有的钉钉通知的springboot项目，在基础上新增一个接口。展示数据做在运维平台上（python的django工程）。数据打算共用数据库。以后会分离出来独立出接口出页面，抽离出来做一个开源项目，做一个通用的工具。</p>
+<h3 id="2-2-设计评审"><a href="#2-2-设计评审" class="headerlink" title="2.2 设计评审"></a>2.2 设计评审</h3><p>测试人员要有阅读设计文档的能力，理清自身业务详细架构图，表结构，接口全链路。设计阶段，可以对一些例如redis缓存策略，表结构设计，接口前端接入是否方便，功能聚合还是解耦提出自己的观点。</p>
+<h2 id="3-开发阶段"><a href="#3-开发阶段" class="headerlink" title="3.开发阶段"></a>3.开发阶段</h2><p>开发阶段时，测试人员主要是在设计用例阶段。再次期间测试可以做很多事情：</p>
+<ul>
+<li>提供冒烟用例供开发自测，协助开发梳理主链路case，同时反推提测质量</li>
+<li>code review代码能力，在提测初期，通过快速的代码review。评估case覆盖面和是否有性能风险。比如底层接口改动对上游哪些业务有影响，是否有表结构变动，对端上是否会有新老版本兼容问题等。对于本次改动是否涉及大流量、大数据量或者复杂的代码逻辑造成的性能风险。</li>
+<li>静态扫描 单元测试覆盖率：这里说的粗一些，首先这一块工作会和开发团队配合沟通比较多，选择jacoco findbugs框架或者sonarqube平台，接入提测阶段的持续集成工作流中 ，把增量代码质量评估加入到整体流程</li>
+</ul>
+<h2 id="4-测试阶段"><a href="#4-测试阶段" class="headerlink" title="4.测试阶段"></a>4.测试阶段</h2><p>在开发代码提测通过后，进入了常规用例测试执行阶段，这期间也有不同维度的技术手段提高质效。</p>
+<h3 id="4-1-自动化建设提效"><a href="#4-1-自动化建设提效" class="headerlink" title="4.1 自动化建设提效"></a>4.1 自动化建设提效</h3><p>我们把自动化建设分几个方向进行讲解</p>
+<ul>
+<li>工具选型：根据团队配置选择合适的框架，需要评估效率、团队能力、二次开发量</li>
+<li>用例脚本设计思路：根据相关业务实际情况，按接口维度设计脚本；按场景维度设计脚本；UI自动化按页面&amp;组件维度设计脚本；抽象suite套件、封装工具类供重复调用避免重复造轮子</li>
+<li>执行场景：集成到测试提测冒烟、预发和生产发布后回归，手工抽取脚本跑批，定期线上健康检查定时任务</li>
+</ul>
+<h3 id="4-2-服务端专项"><a href="#4-2-服务端专项" class="headerlink" title="4.2 服务端专项"></a>4.2 服务端专项</h3><ul>
+<li>接口自动化-常规框架、用例设计思路（按接口、按场景、上下游mock的运用）、封装通用函数工具类</li>
+<li>静态扫描 单元测试覆盖率 服务端代码语法</li>
+<li>java技术栈相关知识和服务端整体链路清晰，springmvc+dubbo微服务框架，数据库、消息队列等</li>
+<li>对日志服务监控和实例监控的运用，建立监控告警问题反馈和跟进解决的流程，形成闭环</li>
+</ul>
+<h3 id="4-3-前端专项"><a href="#4-3-前端专项" class="headerlink" title="4.3 前端专项"></a>4.3 前端专项</h3><ul>
+<li>兼容性测试、稳定性测试：常用框架、云测平台，平台化和接入持续集成</li>
+<li>UI自动化：常规框架（selenium、appium、webdriver、无头浏览器）、设计思路（组件化下的前端项目，按页面和组件的覆盖）</li>
+<li>前端异常上报和前端性能：页面加载生命周期、前端上报异常和跟进解决的流程，形成闭环</li>
+</ul>
+<h3 id="4-4-性能专项"><a href="#4-4-性能专项" class="headerlink" title="4.4 性能专项"></a>4.4 性能专项</h3><ul>
+<li>压测工具：常用工具jmeter、nginder、locust</li>
+<li>接口和常规场景压测：场景设计能力；指标分析和多维度监控能力</li>
+<li>性能问题排查和优化：服务端架构和分析能力：jvm、数据库性能、redis、消息队列、异步处理、nginx、网关、负载均衡等</li>
+<li>全链路压测：流量录制回放能力，服务高可用要求（稳定性相关测试），压测脏数据处理，健壮的监控能力</li>
+</ul>
+<h3 id="4-5-稳定性保障"><a href="#4-5-稳定性保障" class="headerlink" title="4.5 稳定性保障"></a>4.5 稳定性保障</h3><p>混沌测试、故障演练。提高稳定性、服务高可用和容灾，具体操作步骤：</p>
+<ul>
+<li>模拟服务crash、网络异常、第三方服务不可用</li>
+<li>分析服务健壮性，减少影响面（解耦和熔断处理能力）</li>
+<li>提高监控预警及时性</li>
+<li>恢复策略和方案预演</li>
+<li>红蓝对抗，多维度预演生产场景</li>
+</ul>
+<h3 id="4-6-精准测试和探索测试"><a href="#4-6-精准测试和探索测试" class="headerlink" title="4.6 精准测试和探索测试"></a>4.6 精准测试和探索测试</h3><p>待补充</p>
+<h2 id="5-发布上线"><a href="#5-发布上线" class="headerlink" title="5.发布上线"></a>5.发布上线</h2><p>除了UAT环境回归，测试同学也要参与需求发布最后环节的工作中去</p>
+<ul>
+<li>发布流程把控发布项整理：服务部署、数据库脚本、配置变更、回滚计划等</li>
+<li>主动的自动化回归</li>
+<li>被动的监控告警配置</li>
+<li>争对低峰期的发布：流量回放拨测</li>
+<li>最后发布后定期的项目复盘</li>
+</ul>
+<h2 id="6-其他"><a href="#6-其他" class="headerlink" title="6.其他"></a>6.其他</h2><p>上面说的主要是各个阶段测试的工作职责，除此之外，测试同学应该培养PM职责意识和能力，项目流程管理，持续集成，服务治理等很多方向都可以参与或者加入到工作中去。<br>最后不要吐槽我的专业程度和全面性，自身也是需要不断学习不断提高，就这样把。</p>
 
       
     </div>
@@ -573,9 +525,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/需求设计/" rel="tag"># 需求设计</a>
-          
-            <a href="/tags/监控告警/" rel="tag"># 监控告警</a>
+            <a href="/tags/测试/" rel="tag"># 测试</a>
           
         </div>
       
@@ -588,8 +538,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/09/阿猫阿狗谈架构/" rel="next" title="阿猫阿狗谈架构">
-                <i class="fa fa-chevron-left"></i> 阿猫阿狗谈架构
+              <a href="/2019/11/25/深度了解jira的使用/" rel="next" title="深度了解jira的使用">
+                <i class="fa fa-chevron-left"></i> 深度了解jira的使用
               </a>
             
           </div>
@@ -597,10 +547,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/16/通过httprunner框架的python学习笔记/" rel="prev" title="通过httprunner框架的python学习笔记">
-                通过httprunner框架的python学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -787,7 +733,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1整体流程图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1整体流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警导航页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3告警详情页"><span class="nav-number">2.3.</span> <span class="nav-text">2.3告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-先放一个脑图"><span class="nav-number">1.</span> <span class="nav-text">1.先放一个脑图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-需求阶段"><span class="nav-number">2.</span> <span class="nav-text">2.需求阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-需求评审"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 需求评审</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-设计评审"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 设计评审</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-开发阶段"><span class="nav-number">3.</span> <span class="nav-text">3.开发阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-测试阶段"><span class="nav-number">4.</span> <span class="nav-text">4.测试阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-自动化建设提效"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 自动化建设提效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-服务端专项"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 服务端专项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-前端专项"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 前端专项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-性能专项"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 性能专项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-稳定性保障"><span class="nav-number">4.5.</span> <span class="nav-text">4.5 稳定性保障</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-精准测试和探索测试"><span class="nav-number">4.6.</span> <span class="nav-text">4.6 精准测试和探索测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-发布上线"><span class="nav-number">5.</span> <span class="nav-text">5.发布上线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-其他"><span class="nav-number">6.</span> <span class="nav-text">6.其他</span></a></li></ol></div>
             
 
           </div>

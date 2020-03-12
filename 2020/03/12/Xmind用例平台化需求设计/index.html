@@ -94,29 +94,29 @@
 
 
 
-  <meta name="description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="keywords" content="需求设计,测试工具,监控告警">
+  <meta name="description" content="最近看到一个关于质效平台的开源项目，这里不详细介绍这个平台了，如果感兴趣可以自己去看，涉及的功能非常全面，如果根据各自公司实际情况选择性的使用部分功能并进行一些二次开发是不错的选择，这里不扩展讨论，可以自行去看，质效平台文章 上面有一个测试用例管理的功能比较吸引我，主要也是由于公司实际情况，没有一个合适的平台化的工具去维护用例，产品团队、UI团队、开发团队都有各自的工具加之wiki、jira、ci">
+<meta name="keywords" content="需求设计,测试工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="告警平台需求设计">
-<meta property="og:url" content="http://yoursite.com/2019/08/16/告警平台需求设计/index.html">
+<meta property="og:title" content="Xmind用例平台化需求设计">
+<meta property="og:url" content="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/index.html">
 <meta property="og:site_name" content="阿隆">
-<meta property="og:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
+<meta property="og:description" content="最近看到一个关于质效平台的开源项目，这里不详细介绍这个平台了，如果感兴趣可以自己去看，涉及的功能非常全面，如果根据各自公司实际情况选择性的使用部分功能并进行一些二次开发是不错的选择，这里不扩展讨论，可以自行去看，质效平台文章 上面有一个测试用例管理的功能比较吸引我，主要也是由于公司实际情况，没有一个合适的平台化的工具去维护用例，产品团队、UI团队、开发团队都有各自的工具加之wiki、jira、ci">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu1.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/jiaohu2.png">
-<meta property="og:updated_time" content="2020-03-12T06:45:41.746Z">
+<meta property="og:image" content="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/liuchengtu.jpg">
+<meta property="og:image" content="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/mind_list.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/mind_editor.png">
+<meta property="og:updated_time" content="2020-03-12T07:27:20.160Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="告警平台需求设计">
-<meta name="twitter:description" content="最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：  1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计 2、告">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/16/告警平台需求设计/liuchengtu.png">
+<meta name="twitter:title" content="Xmind用例平台化需求设计">
+<meta name="twitter:description" content="最近看到一个关于质效平台的开源项目，这里不详细介绍这个平台了，如果感兴趣可以自己去看，涉及的功能非常全面，如果根据各自公司实际情况选择性的使用部分功能并进行一些二次开发是不错的选择，这里不扩展讨论，可以自行去看，质效平台文章 上面有一个测试用例管理的功能比较吸引我，主要也是由于公司实际情况，没有一个合适的平台化的工具去维护用例，产品团队、UI团队、开发团队都有各自的工具加之wiki、jira、ci">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/liuchengtu.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+  <link rel="canonical" href="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>告警平台需求设计 | 阿隆</title>
+  <title>Xmind用例平台化需求设计 | 阿隆</title>
   
 
 
@@ -346,7 +346,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/告警平台需求设计/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/12/Xmind用例平台化需求设计/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="along">
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">告警平台需求设计
+          <h1 class="post-title" itemprop="name headline">Xmind用例平台化需求设计
 
               
             
@@ -389,24 +389,12 @@
                 
               
 
-              <time title="创建时间：2019-08-16 11:58:36" itemprop="dateCreated datePublished" datetime="2019-08-16T11:58:36+08:00">2019-08-16</time>
+              <time title="创建时间：2020-03-12 14:43:29 / 修改时间：15:27:20" itemprop="dateCreated datePublished" datetime="2020-03-12T14:43:29+08:00">2020-03-12</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-03-12 14:45:41" itemprop="dateModified" datetime="2020-03-12T14:45:41+08:00">2020-03-12</time>
               
             
           </span>
@@ -458,111 +446,14 @@
       
 
       
-        <p>最近计划做一个统一监控告警平台，提供统一API整合公司各类型的监控告警，进行留档统计以及通知转发。萌生这一想法的原因是，一来最近一直苦苦想不出季度KPI技术项；二来公司目前的通知告警仅是把各告警通知到钉钉，且只能发一个群。一开始仅仅是想支持一下发多个群，后来在这基础上扩展了一下想法。目的是解决目前告警的几个痛点：</p>
-<ul>
-<li>1、目前钉钉消息多而杂，往往一天后在往回就找不到都报了啥告警，缺少留档统计</li>
-<li>2、告警来源多，各个告警源消息格式不一样，除了运维同学，其他技术同学也搞不清一共有哪些</li>
-<li>3、通知手段单一，钉钉消息一多，感知度和关注度会降低</li>
-</ul>
-<p>最终和运维测试团队碰了一下思路，觉得做这么一个整合告警的平台，再推动使用落地。用于反推一些偶发告警问题，反推告警配置有效性。下面记录了详细的交互稿，接口设计和技术选型<br><a id="more"></a></p>
-<h2 id="1-统一的接收告警接口"><a href="#1-统一的接收告警接口" class="headerlink" title="1.统一的接收告警接口"></a>1.统一的接收告警接口</h2><p>提供统一的webhook接口收集告警，将告警信息统一数据格式留档，然后传入通知到哪些地方，是否记录工单（jira）</p>
-<h3 id="1-1接口地址"><a href="#1-1接口地址" class="headerlink" title="1.1接口地址"></a>1.1接口地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http请求方式：POST</span><br><span class="line">https://your.monitor.com/monitorAlert?from_paltform=aliyun</span><br></pre></td></tr></table></figure>
-<h3 id="1-2请求参数"><a href="#1-2请求参数" class="headerlink" title="1.2请求参数"></a>1.2请求参数</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数</th>
-<th style="text-align:left">是否必须</th>
-<th style="text-align:left">类型</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">from_paltform</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>来源平台</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">object</td>
-<td>通知到哪</td>
-</tr>
-<tr>
-<td style="text-align:left">send_where.ding</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">list</td>
-<td>通知钉钉群数组</td>
-</tr>
-<tr>
-<td style="text-align:left">is_record_jira</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">boolean</td>
-<td>是否创建工单</td>
-</tr>
-<tr>
-<td style="text-align:left">status</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">int</td>
-<td>1、告警；2、解除告警，默认告警</td>
-</tr>
-<tr>
-<td style="text-align:left">data</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>告警信息</td>
-</tr>
-<tr>
-<td style="text-align:left">data.trigger</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警标题</td>
-</tr>
-<tr>
-<td style="text-align:left">data.user</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>责任人</td>
-</tr>
-<tr>
-<td style="text-align:left">data.busitype</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属业务</td>
-</tr>
-<tr>
-<td style="text-align:left">data.project</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>所属应用</td>
-</tr>
-<tr>
-<td style="text-align:left">data.message</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">string</td>
-<td>告警描述</td>
-</tr>
-<tr>
-<td style="text-align:left">data.firetime</td>
-<td style="text-align:left">false</td>
-<td style="text-align:left">string</td>
-<td>告警时间，默认填充服务器时间戳</td>
-</tr>
-<tr>
-<td style="text-align:left">data.queryurl</td>
-<td style="text-align:left">ture</td>
-<td style="text-align:left">object</td>
-<td>关联链接</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-统一告警平台交互"><a href="#2-统一告警平台交互" class="headerlink" title="2.统一告警平台交互"></a>2.统一告警平台交互</h2><p>前期计划直接延用目前运维平台已有的前端页面模板，已经满足目前的业务需求，如果后续使用的好，考虑将前端分离出来，再进行优化展示。受限于页面模板，先做成两个页面：告警导航页，和告警详情页。后续可以整合到一个页面</p>
-<h3 id="2-1整体流程图"><a href="#2-1整体流程图" class="headerlink" title="2.1整体流程图"></a>2.1整体流程图</h3><img src="/2019/08/16/告警平台需求设计/liuchengtu.png">
-<h3 id="2-2告警导航页"><a href="#2-2告警导航页" class="headerlink" title="2.2告警导航页"></a>2.2告警导航页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu1.png">
-<h3 id="2-3告警详情页"><a href="#2-3告警详情页" class="headerlink" title="2.3告警详情页"></a>2.3告警详情页</h3><img src="/2019/08/16/告警平台需求设计/jiaohu2.png">
-<h2 id="3-技术选型思路"><a href="#3-技术选型思路" class="headerlink" title="3.技术选型思路"></a>3.技术选型思路</h2><p>要做的东西可以分为两步，一个是统一接口收集告警，一个是平台展示编辑数据。统一接口延用公司已有的钉钉通知的springboot项目，在基础上新增一个接口。展示数据做在运维平台上（python的django工程）。数据打算共用数据库。以后会分离出来独立出接口出页面，抽离出来做一个开源项目，做一个通用的工具。</p>
-
+        <p>最近看到一个关于质效平台的开源项目，这里不详细介绍这个平台了，如果感兴趣可以自己去看，涉及的功能非常全面，如果根据各自公司实际情况选择性的使用部分功能并进行一些二次开发是不错的选择，这里不扩展讨论，可以自行去看，<a href="https://testerhome.com/topics/21620" target="_blank" rel="noopener">质效平台文章</a></p>
+<p>上面有一个测试用例管理的功能比较吸引我，主要也是由于公司实际情况，没有一个合适的平台化的工具去维护用例，产品团队、UI团队、开发团队都有各自的工具加之wiki、jira、cicd、devops平台，唯独测试这边用例还停留在文档维护阶段，着实有点low，根据这位仁兄另一个帖子的思路，打算借助他人的轮子，打造一个用例平台化管理工具，<a href="https://testerhome.com/topics/21378" target="_blank" rel="noopener">开源项目文章</a>，初步考察和实现了雏形之后，记录一下设计思路和交互稿。。。<br><a id="more"></a></p>
+<h2 id="1-原型项目介绍"><a href="#1-原型项目介绍" class="headerlink" title="1.原型项目介绍"></a>1.原型项目介绍</h2><p>首先是拿到前人调整过的kityminder-editor，一个本地编辑脑图的单页面vue工程，实现了脑图编辑和本地保存，详见开源项目地址<br><a href="https://github.com/fudax/vue-mindeditor" target="_blank" rel="noopener">开源项目地址</a></p>
+<h2 id="2-改造思路"><a href="#2-改造思路" class="headerlink" title="2.改造思路"></a>2.改造思路</h2><h2 id="2-1-Plan-A"><a href="#2-1-Plan-A" class="headerlink" title="2.1 Plan A"></a>2.1 Plan A</h2><p>新起一个vue-admin实现用例列表，再将kityminder-editor作为编辑页集成到此前端工程<br>新起一个服务端、语言不限实现接口部分<br>此方案成本高，扩展性高，适用于无现成平台从0搭建，并方便开源</p>
+<h2 id="2-2-Plan-B"><a href="#2-2-Plan-B" class="headerlink" title="2.2 Plan B"></a>2.2 Plan B</h2><p>kityminder-editor作为独立工程，补充接口查询和保存功能<br>用例列表实现在已有的任意平台。原平台实现列表的增删改查。提供用例编辑查看保存接口，给editor页调用<br>此方案成本低，适用于集成到已有的工具平台</p>
+<h2 id="3-流程图和接口设计"><a href="#3-流程图和接口设计" class="headerlink" title="3.流程图和接口设计"></a>3.流程图和接口设计</h2><img src="/2020/03/12/Xmind用例平台化需求设计/liuchengtu.jpg">
+<h2 id="4-交互稿"><a href="#4-交互稿" class="headerlink" title="4.交互稿"></a>4.交互稿</h2><img src="/2020/03/12/Xmind用例平台化需求设计/mind_list.png">
+<img src="/2020/03/12/Xmind用例平台化需求设计/mind_editor.png">
       
     </div>
 
@@ -589,8 +480,6 @@
           
             <a href="/tags/测试工具/" rel="tag"># 测试工具</a>
           
-            <a href="/tags/监控告警/" rel="tag"># 监控告警</a>
-          
         </div>
       
 
@@ -602,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/09/阿猫阿狗谈架构/" rel="next" title="阿猫阿狗谈架构">
-                <i class="fa fa-chevron-left"></i> 阿猫阿狗谈架构
+              <a href="/2020/03/04/敏捷开发各个阶段业务测试人员的知识体系/" rel="next" title="敏捷开发各个阶段业务测试人员的知识体系">
+                <i class="fa fa-chevron-left"></i> 敏捷开发各个阶段业务测试人员的知识体系
               </a>
             
           </div>
@@ -611,10 +500,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/16/通过httprunner框架的python学习笔记/" rel="prev" title="通过httprunner框架的python学习笔记">
-                通过httprunner框架的python学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -803,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-统一的接收告警接口"><span class="nav-number">1.</span> <span class="nav-text">1.统一的接收告警接口</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1接口地址"><span class="nav-number">1.1.</span> <span class="nav-text">1.1接口地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2请求参数"><span class="nav-number">1.2.</span> <span class="nav-text">1.2请求参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-统一告警平台交互"><span class="nav-number">2.</span> <span class="nav-text">2.统一告警平台交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1整体流程图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1整体流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2告警导航页"><span class="nav-number">2.2.</span> <span class="nav-text">2.2告警导航页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3告警详情页"><span class="nav-number">2.3.</span> <span class="nav-text">2.3告警详情页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-技术选型思路"><span class="nav-number">3.</span> <span class="nav-text">3.技术选型思路</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-原型项目介绍"><span class="nav-number">1.</span> <span class="nav-text">1.原型项目介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-改造思路"><span class="nav-number">2.</span> <span class="nav-text">2.改造思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Plan-A"><span class="nav-number">3.</span> <span class="nav-text">2.1 Plan A</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Plan-B"><span class="nav-number">4.</span> <span class="nav-text">2.2 Plan B</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-流程图和接口设计"><span class="nav-number">5.</span> <span class="nav-text">3.流程图和接口设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-交互稿"><span class="nav-number">6.</span> <span class="nav-text">4.交互稿</span></a></li></ol></div>
             
 
           </div>
